@@ -2,6 +2,23 @@
 <head>
 	<meta charset="UTF-8"/>
 <title>mon exercice 1 JS</title>
+
+<script>
+
+
+function presenter(){
+	document.getElementById('image').style.display="Block";
+
+function controler(){
+	if(document.getElementById('Control').checked){
+			alert("Bouton option cochÃ©");
+		}
+	else{alert("Bouton option NON cochÃ©");}
+</script>
+
+
+
+
 </head>
 <body>
 <h2>Images à afficher ?</h2>
@@ -11,24 +28,11 @@
 <input type="checkbox" id="Control">image 2 <br>
 	
 <input type="checkbox" id="Control">image 3 <br>
-	
-<button onclick="controler()">Check</button>
-
-
-
-
-
-
+<br>
 	
 <button onclick="affichage()">Afficher</button>
-<hr/>
-<p id="DuTexte">Ma phrase de texte</p>
-<button onclick="presenter()">Presenter</button>
-<button onclick="cacher()">Cacher</button>
-<hr/>
-<p>Option<input type="checkbox" id="Control"></p>
-<button onclick="controler()">Check</button>
 
+<p id="image"><img src="./Image1.jpg" alt="image 1"></p>
 
 </body>
 </html>
