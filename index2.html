@@ -5,15 +5,17 @@
 
 <script>
 
+function controler(){
+if(document.getElementById('Control').checked){
+document.getElementById('image1').style.display="Block";
 
-function presenter(){
-	document.getElementById('image').style.display="Block";
+}
+else{document.getElementById('image1').style.display="None";}
+}
 
-function affichage(){
-	if(document.getElementById('Control').checked){
-			document.getElementById('image').style.display="Block";
-		}
-	else{alert("Bouton option NON cochÃ©");}
+
+
+
 </script>
 
 
@@ -30,9 +32,9 @@ function affichage(){
 <input type="checkbox" id="Control">image 3 <br>
 <br>
 	
-<button onclick="affichage()">Afficher</button>
+<button onclick="controler()">check</button> <br>
 
-<p id="image"><img src="./Image1.jpg" alt="image 1"></p>
+<p id="image1"> <img src="Image1.jpg" style="display:None" alt="image 1"></p>
 
 </body>
 </html>
