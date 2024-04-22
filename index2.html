@@ -12,7 +12,21 @@ document.getElementById('image1').style.display="Block";
 }
 else{document.getElementById('image1').style.display="None";}
 }
+	
+function controler2(){
+if(document.getElementById('Control').checked){
+document.getElementById('image2').style.display="Block";
 
+}
+else{document.getElementById('image2').style.display="None";}
+}
+function controler3(){
+if(document.getElementById('Control').checked){
+document.getElementById('image3').style.display="Block";
+
+}
+else{document.getElementById('image3').style.display="None";}
+}
 
 
 
@@ -35,6 +49,8 @@ else{document.getElementById('image1').style.display="None";}
 <button onclick="controler()">check</button> <br>
 
 <p id="image1"> <img src="Image1.jpg" style="display:None" alt="image 1"></p>
+<p id="image2"> <img src="Image2.jpg" style="display:None" alt="image 2"></p>
+<p id="image3"> <img src="Image3.jpg" style="display:None" alt="image 3"></p>
 
 </body>
 </html>
