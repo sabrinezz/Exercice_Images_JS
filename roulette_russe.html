@@ -39,7 +39,7 @@
     </style>
 <script>
       function jouer(){
-        var Val = Math.floor((Math.random() * 3)+1);
+        var Val = Math.floor((Math.random() * 7)+1);
 document.getElementById('B1').style.display = 'none';
 document.getElementById('B2').style.display = 'none';
 document.getElementById('B3').style.display = 'none';
@@ -49,18 +49,30 @@ switch(Val){
         case 1 :
                     document.getElementById('B1').style.display = 'block';
                     break;
-
         case 2 :
+                    document.getElementById('B2').style.display = 'block';
+                    break;
+         case 3 :
+                    document.getElementById('B3').style.display = 'block';
+                    break;
+        case 4 :
                     document.getElementById('B1').style.display = 'block';
                     document.getElementById('B2').style.display = 'block';
                     break;
-
-        case 3 :
+        case 5 :
+                    document.getElementById('B2').style.display = 'block';
+                    document.getElementById('B3').style.display = 'block';
+                    break;
+        case 6 :
+                    document.getElementById('B1').style.display = 'block';
+                    document.getElementById('B3').style.display = 'block';
+                    break;
+        case 7 :
                     document.getElementById('B1').style.display = 'block';
                     document.getElementById('B2').style.display = 'block';
                     document.getElementById('B3').style.display = 'block';
                     break;
-    
+         
     
         }
         
