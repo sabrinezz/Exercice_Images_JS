@@ -23,6 +23,11 @@
             width: 100%;
             text-align: center;
         }
+
+         #bouton {
+            text-align: center;
+            margin-top: 20px; /* Ajustez selon votre préférence */
+        }
     </style>
 </head>
 <body onload="principale()">
@@ -39,14 +44,16 @@
               <circle cx="150" cy="400" r="60" fill="gray" stroke="black" stroke-width="5" id="ball4" />
              <circle cx="450" cy="400" r="60" fill="gray" stroke="black"stroke-width="5" id="ball5" />
              <circle cx="150" cy="200" r="60" fill="gray" stroke="black" stroke-width="5" id="ball6" />
-             <circle cx="150" cy="200" r="60" fill="red" stroke="black" stroke-width="5" id="ball7" style="display:None"/>
-              <circle cx="450" cy="200" r="60" fill="red" stroke="black" stroke-width="5" id="ball7" style="display:None"/>
-              <circle cx="450" cy="400" r="60" fill="red" stroke="black" stroke-width="5" id="ball7" style="display:None"/>
-
+             <circle cx="150" cy="200" r="60" fill="red" stroke="black" stroke-width="5" id="ball7" style="display:None" >
+              <circle cx="450" cy="200" r="60" fill="red" stroke="black" stroke-width="5" id="ball8" style="display:None" />
+              <circle cx="450" cy="400" r="60" fill="red" stroke="black" stroke-width="5" id="ball9" style="display:None" />
 
 
 
         </svg>
     </div>
+    <div id="button">
+    <button onclick="controler()" >jouer</button> <br>
+     </div>
 </body>
 </html>
