@@ -74,12 +74,30 @@ switch(Val){
                     document.getElementById('B2').style.display = 'block';
                     document.getElementById('B3').style.display = 'block';
                     break;
+        case 7 :
+                    document.getElementById('B1').style.display = 'none';
+                    document.getElementById('B2').style.display = 'none';
+                    document.getElementById('B3').style.display = 'none';
+                    break;
          
     
         }
         
-      }
-    </script>  
+      }  
+    
+function controler() {
+    if (document.getElementById('B1').checked) {
+        alert("Vous avez gagné 10.000€");
+    } else if (document.getElementById('B2').checked) {
+        alert("Vous avez gagné 100.000€");
+    }  else if (document.getElementById('B2').checked) {
+        alert("Vous avez gagné 100.000.000€");
+    else {
+        alert("Vous avez perdu");
+    }
+}
+
+</script>  
 
 
     
@@ -107,9 +125,9 @@ switch(Val){
         </svg>
    
     <div id="button">
-    <button onclick="jouer()" >jouer</button> <br>
+    <button onclick="jouer();controler();" >jouer</button> <br>
      </div>
  </div>
- 
+
 </body>
 </html>
