@@ -1,22 +1,47 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-#zonedejeux{background-color:antiquewhite;
-			width:400px; height:400px;
-			position:absolute; top:3px; left:3px;
-			z-index:1;}
-h1{position:absolute;top:-7px; left:320px; z-index:2;}
-</style>
-
-
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #zonedejeux {
+            background-color: antiquewhite;
+            width: 600px;
+            height: 600px;
+            position: relative;
+            text-align: center;
+        }
+        h1 {
+            position: absolute;
+            top: -7px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body onload="principale()">
-	<h1>Jeux Roulette Russe </h1>
-	<svg id="zonedejeux">
-	<circle cx="450" cy="200" r="15" fill="tomato" id="ball" />
-	<circle cx="885" cy="200" r="15" fill="blue" id="ball2" />
-	
-	</svg>
-<body>
+    <div id="zonedejeux">
+        <h1>Jeux Roulette Russe</h1>
+        <svg id="zonedejeux" width="100%" height="100%">
+            <circle cx="300" cy="300" r="15" fill="black" id="blackball" />
+            <circle cx="300" cy="300" r="260" stroke="black" stroke-width="5" fill="none" />
+
+
+            <circle cx="300" cy="120" r="60" fill="gray" stroke="black" stroke-width="5" id="ball1" />
+             <circle cx="300" cy="480" r="60" fill="gray" stroke="black"stroke-width="5" id="ball2" />
+             
+
+
+
+
+
+        </svg>
+    </div>
+</body>
 </html>
